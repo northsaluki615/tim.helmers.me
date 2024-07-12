@@ -1,0 +1,111 @@
+:root {
+    --jasper: #db504aff;
+    --bittersweet: #ff6f59ff;
+    --dark-slate-gray: #254441ff;
+    --zomp: #43aa8bff;
+    --sage: #b2b09bff;
+  }
+  
+  body {
+    font-family: 'Liberation Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--dark-slate-gray);
+  }
+  
+  header {
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  .featured-image {
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 80%;
+  }
+  
+  .featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border-bottom: 5px solid var(--jasper);
+  }
+  
+  .dates {
+    background: var(--dark-slate-gray);
+    color: var(--sage);
+    padding: 1em 0;
+  }
+  
+  main {
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 10em;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    font-family: 'MVB Pinecone', sans-serif;
+    color: var(--jasper);
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .tribute-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+  }
+  
+  .tribute {
+    border: 1px solid var(--bittersweet);
+    padding: 1em;
+    margin: 1em 0;
+    background: #fff;
+    border-radius: 5px;
+  }
+  
+  #donations ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #donations li {
+    margin: 0.5em 0;
+  }
+  
+  #donations a {
+    color: var(--zomp);
+    text-decoration: none;
+  }
+  
+  #donations a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      margin: 1em;
+      padding: 1em;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .tribute-section {
+      grid-template-columns: 1fr;
+    }
+  }
+  

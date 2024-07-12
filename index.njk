@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    @import url('https://use.typekit.net/your-typekit-id.css'); /* Replace 'your-typekit-id' with the actual Typekit ID */
+    @import url('https://fonts.googleapis.com/css2?family=Liberation+Sans:wght@400;700&display=swap');
+
+    body {
+      background: url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="featured-image">
+      <img src="images/2023-06-06(4).jpg" alt="Featured Image of Tim Helmers">
+    </div>
+    <div class="dates">
+      <h1>{{ site.name }}</h1>
+      <p>{{ site.birthdate }} - {{ site.passingdate }}</p>
+    </div>
+  </header>
+  <main>
+    <section id="bio">
+      <h2>Biography</h2>
+      <p>{{ site.bio }}</p>
+    </section>
+    <section id="life-events">
+      <h2>Life Events</h2>
+      <ul>
+        {% for event in site.lifeEvents %}
+          <li><strong>{{ event.year }}</strong>: {{ event.description }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section id="gallery">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        {% for photo in site.photos %}
+          <img src="{{ photo }}" alt="Photo">
+        {% endfor %}
+      </div>
+    </section>
+    <section id="tributes">
+      <h2>Tributes</h2>
+      <div class="tribute-section">
+        {% for tribute in site.tributes %}
+          <div class="tribute">
+            <h3>{{ tribute.name }}</h3>
+            <p>{{ tribute.message }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+    <section id="donations">
+      <h2>Donations</h2>
+      <ul>
+        {% for donation in site.donations %}
+          <li><a href="{{ donation.url }}" target="_blank">{{ donation.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Memorial for Tim Helmers - tim.helmers.me</p>
+  </footer>
+</body>
+</html>
