@@ -2,12 +2,11 @@
     "name": "tim-helmers-memorial-site",
     "version": "1.0.0",
     "scripts": {
-      "build": "npx @11ty/eleventy",
-      "start": "http-server _site -p $PORT"
+        "build": "npx @11ty/eleventy",
+        "start": "http-server _site -p $PORT"
     },
     "dependencies": {
-      "@11ty/eleventy": "^0.12.1",
-      "http-server": "^0.12.3"
+        "@11ty/eleventy": "^2.0.1",
+        "http-server": "^14.1.1"
     }
-  }
-  
+}
