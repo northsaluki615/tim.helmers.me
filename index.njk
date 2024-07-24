@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
   </style>
@@ -40,7 +41,11 @@
       <h2>Photo Gallery</h2>
       <div class="gallery">
         {% for photo in site.photos %}
-          <img src="{{ photo }}" alt="Photo">
+          <div class="gallery-item">
+            <a href="{{ photo }}" data-lightbox="gallery">
+              <img src="{{ photo }}" alt="Photo">
+            </a>
+          </div>
         {% endfor %}
       </div>
     </section>
@@ -67,5 +72,6 @@
   <footer>
     <p>&copy; Memorial for Tim Helmers - tim.helmers.me</p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
