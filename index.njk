@@ -6,9 +6,7 @@
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href="css/styles.css">
   <style>
-    @import url('https://use.typekit.net/your-typekit-id.css'); /* Replace 'your-typekit-id' with the actual Typekit ID */
-    @import url('https://fonts.googleapis.com/css2?family=Liberation+Sans:wght@400;700&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
     body {
       background: url('images/background.jpg') no-repeat center center fixed;
       background-size: cover;
@@ -17,18 +15,22 @@
 </head>
 <body>
   <header>
-    <div class="featured-image">
-      <img src="images/2023-06-06(4).jpg" alt="Featured Image of Tim Helmers">
-    </div>
-    <div class="dates">
-      <h1>{{ site.name }}</h1>
-      <p>{{ site.birthdate }} - {{ site.passingdate }}</p>
+    <div class="header-content">
+      <div class="featured-image">
+        <img src="images/2023-06-06~2.jpg" alt="Featured Image of Tim Helmers">
+      </div>
+      <div class="dates">
+        <h1>{{ site.name }}</h1>
+        <p>{{ site.birthdate }} - {{ site.passingdate }}</p>
+      </div>
     </div>
   </header>
   <main>
     <section id="bio">
       <h2>Biography</h2>
-      <p>{{ site.bio }}</p>
+      {% for paragraph in site.bio %}
+        <p>{{ paragraph }}</p>
+      {% endfor %}
     </section>
     <section id="life-events">
       <h2>Life Events</h2>
