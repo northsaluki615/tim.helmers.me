@@ -49,6 +49,18 @@
         {% endfor %}
       </div>
     </section>
+    <section id="memorial-museum">
+      <h2>Tim's Memorial Museum</h2>
+      <div class="gallery">
+        {% for photo in site.museumPhotos %}
+          <div class="gallery-item">
+            <a href="{{ photo }}" data-lightbox="museum-gallery">
+              <img src="{{ photo }}" alt="Photo">
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
     <section id="tributes">
       <h2>Tributes</h2>
       <div class="tribute-section">

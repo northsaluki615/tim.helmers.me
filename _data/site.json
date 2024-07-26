@@ -36,13 +36,24 @@
     "images/2023-06-06(1).jpg",
     "images/2023-06-06(2).jpg",
     "images/2023-06-06(3).jpg",
-    "images/2023-06-06(4).jpg",
+    "images/2023-06-06~2.jpg",
     "images/2023-06-06.jpg",
     "images/DSC00011.JPG",
     "images/IMG_20170725_223740.jpg",
     "images/KM_20160130_0082.jpg",
     "images/PXL_20220605_144849391.jpg",
     "images/PXL_20231224_033956952.jpg"
+  ],
+  "museumPhotos": [
+    "images/coastie-tim.jpg",
+    "images/IMG_4570.jpg",
+    "images/tim-pottery.jpg",
+    "images/tim-jersey.jpg",
+    "images/tim-home.jpg",
+    "images/tim-scout-patches.jpg",
+    "images/tim-and-the-boys.jpg",
+    "images/tim-in-his-glory.jpg",
+    "images/tim-scout-quilt.jpg"
   ],
   "tributes": [
     {
@@ -77,7 +88,7 @@
   "donations": [
     {
       "name": "Camp Robert Drake",
-      "url": "https://camprobertdrake.org"
+      "url": "https://www.campdrake.com/"
     },
     {
       "name": "Charity of Your Choice",
